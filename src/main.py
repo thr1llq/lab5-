@@ -7,7 +7,7 @@ from .routers import router
 app = FastAPI(debug=False)
 app.include_router(router=router)
 
-if __name__ == "__master__":
+if __name__ == "__main__":
     uvicorn.run(
         app=app,
         host=settings.SERVER_ADDR,
